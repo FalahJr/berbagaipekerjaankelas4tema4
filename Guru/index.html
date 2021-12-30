@@ -53,7 +53,7 @@
     <nav class="navbar navbar-light bg-light p-3">
         <div class="d-flex col-12 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
             <a class="navbar-brand" href="#">
-               Mbahjon Admin
+               Dashboard Guru
             </a>
             <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -64,9 +64,9 @@
             
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                  admin2@admin.com                </button>
+                  Dewi N                </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="logout.php">Sign out</a></li>
+                  <li><a class="dropdown-item" href="../index.html">Sign out</a></li>
                 </ul>
               </div>
         </div>
@@ -77,23 +77,12 @@
                 <div class="position-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                          <a class="nav-link " aria-current="page" href="dashboard.php">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                            <span class="ml-2">Dashboard</span>
+                          <a class="nav-link active " aria-current="page" href="index.html">
+                            
+                            <span class="ml-2">Nilai</span>
                           </a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link active" href="order.php">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                            <span class="ml-2">Orders</span>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link " href="product.php">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                            <span class="ml-2">Products</span>
-                          </a>
-                        </li>
+                        
                     
                       </ul>
                 </div>
@@ -102,74 +91,63 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Order</li>
+                        <li class="breadcrumb-item active" aria-current="page">Nilai</li>
                     </ol>
                 </nav>
-                <h1 class="h2">History Order Mbahjon</h1>
-                <!-- <a href="addproduct.php" class="btn btn-sm btn-success mr-4"><i class="fas fa-plus"></i> Tambah Menu</a> -->
+                <h1 class="h2">Daftar Nilai Siswa</h1>
+                <a href="tambah.html" class="btn btn-sm btn-success mr-4"><i class="fas fa-plus"></i> Tambah Nilai</a>
                 <br>
                 <table class="table table-hover">
                     <thead>
                         <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nama Pembeli</th>
-                        <th scope="col">Tanggal</th>
-                        <th scope="col">Total Order</th>
+                        <th scope="col">Nama Lengkap</th>
+                        <th scope="col">Kelas</th>
+                        <th scope="col">No Absen</th>
+                        <th scope="col">Nilai</th>
+                        <th scope="col" colspan="2">Action</th>
+
+
                         <!-- <th scope="col" colspan="">Action</th> -->
                         </tr>
                     </thead>
                     <tbody>
-                                            <tr>
+                        <tr>
                         <th scope="row">1</th>
-                        <td>tes@tes.com</td>
-                        <td>2021-12-13 12:36:52</td>
-                        <td>Rp. 50000</td>
-                        <td>
-                        
-                       
-                        </td>
+                        <td>Siswa 1</td>
+                        <td>3</td>
+                        <td>20</td>
+                        <td>100</td>
+                        <td><button class="btn btn-info">Edit</button></td>
                         <!-- <td></td> -->
                         </tr>
-                        <!-- <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        </tr>
                         <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                        </tr> -->
-                                                <tr>
-                        <th scope="row">2</th>
-                        <td>tes@tes.com</td>
-                        <td>2021-12-13 12:46:23</td>
-                        <td>Rp. 50000</td>
-                        <td>
-                        
-                       
-                        </td>
-                        <!-- <td></td> -->
-                        </tr>
-                        <!-- <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                        </tr> -->
-                                            </tbody>
+                            <th scope="row">1</th>
+                            <td>Siswa 1</td>
+                            <td>3</td>
+                            <td>20</td>
+                            <td>100</td>
+                        <td><button class="btn btn-info">Edit</button></td>
+
+                            <!-- <td></td> -->
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Siswa 1</td>
+                                <td>3</td>
+                                <td>20</td>
+                                <td>100</td>
+                        <td><button class="btn btn-info">Edit</button></td>
+
+                                <!-- <td></td> -->
+                                </tr>
+                    </tbody>
                 </table>
                 <footer class="pt-5 d-flex justify-content-between">
-                    <span>Copyright © 2021 <a href=">Kelompok 5</a></span>
+                    <span>Copyright © 2021 <a href="">Dewi Novitasari</a></span>
                 </footer>
             </main>
-</div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
